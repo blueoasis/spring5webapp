@@ -105,6 +105,7 @@ public class Publisher {
     @Override
     public String toString() {
         return "Publisher{" +
+
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", addressLine1='" + addressLine1 + '\'' +
