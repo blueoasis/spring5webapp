@@ -18,8 +18,6 @@ public class Author {
     @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 
-//    private Publisher publisher;
-
     public Long getId() {return id;}
 
     public void setId(Long id) {this.id = id;}
@@ -35,7 +33,6 @@ public class Author {
     public String getFirstName() {
         return firstName;
     }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -43,7 +40,6 @@ public class Author {
     public String getLastName() {
         return lastName;
     }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
@@ -51,12 +47,9 @@ public class Author {
     public Set<Book> getBooks() {
         return books;
     }
-
     public void setBooks(Set<Book> books) {
         this.books = books;
     }
-
-
 
     @Override
     public boolean equals(Object o) {
@@ -79,7 +72,6 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
                 '}';
     }
 }
